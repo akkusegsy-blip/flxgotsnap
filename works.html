@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKKU | Works</title>
+    <style>
+        :root {
+            --primary-color: #00d2ff;
+            --bg-dark: #050505;
+            --card-bg: rgba(0, 0, 0, 0.4);
+            --border-glow: rgba(0, 210, 255, 0.3);
+        }
+
+        @keyframes masterFloat {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        #bg-video {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            object-fit: cover; z-index: -1; background: #000;
+        }
+
+        body { 
+            margin: 0; 
+            font-family: 'Segoe UI', sans-serif; 
+            color: white; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            padding: 20px; 
+            min-height: 100vh;
+            overflow-x: hidden;
+            box-sizing: border-box;
+        }
+
+        .services-container {
+            width: 100%;
+            max-width: 450px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: masterFloat 5s ease-in-out infinite;
+        }
+
+        .header-glow {
+            font-size: 1.8rem;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-color);
+            font-weight: bold;
+        }
+
+        .card { 
+            background: var(--card-bg); 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+            border-radius: 20px; 
+            padding: 22px; 
+            margin: 10px 0; 
+            width: 100%; 
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            transition: all 0.4s ease;
+            box-sizing: border-box;
+        }
+
+        .card:hover { 
+            border-color: var(--primary-color); 
+            background: rgba(0, 210, 255, 0.1); 
+            box-shadow: 0 0 25px var(--border-glow);
+        }
+
+        h2 { 
+            color: var(--primary-color); 
+            font-size: 1.1rem; 
+            margin: 0 0 10px 0; 
+            display: flex; 
+            align-items: center; 
+            gap: 12px; 
+            text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
+        }
+
+        .dot { height: 6px; width: 6px; background-color: var(--primary-color); border-radius: 50%; box-shadow: 0 0 10px var(--primary-color); }
+
+        p { color: #aaa; font-size: 0.85rem; line-height: 1.6; margin: 0; }
+
+        .back-link { 
+            margin-top: 30px; 
+            color: var(--primary-color); 
+            text-decoration: none; 
+            font-size: 0.85rem; 
+            border: 1px solid var(--primary-color); 
+            padding: 10px 25px; 
+            border-radius: 50px; 
+            transition: 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            text-shadow: 0 0 10px var(--primary-color);
+        }
+
+        .back-link:hover { background: var(--primary-color); color: #000; box-shadow: 0 0 20px var(--primary-color); }
+    </style>
+</head>
+<body>
+
+<video autoplay muted loop playsinline id="bg-video">
+    <source src="bg.mp4" type="video/mp4">
+</video>
+
+<div class="services-container">
+    <div class="header-glow">SERVICES</div>
+
+    <div class="card">
+        <h2><span class="dot"></span> 𝗕𝗔𝗡𝗡𝗜𝗡𝗚 & 𝗨𝗡𝗕𝗔𝗡𝗡𝗜𝗡𝗚</h2>
+        <p>Specialist in recovering disabled accounts and handling strict violations on Instagram & Meta platforms.</p>
+    </div>
+
+    <div class="card">
+        <h2><span class="dot"></span> 𝗦𝗢𝗖𝗜𝗔𝗟 𝗠𝗘𝗗𝗜𝗔 𝗚𝗥𝗢𝗪𝗧𝗛</h2>
+        <p>Helping brands and individuals dominate the algorithm. Expertise in YT & IG organic growth.</p>
+    </div>
+
+    <div class="card">
+        <h2><span class="dot"></span> 𝗣𝗥𝗘𝗠𝗜𝗨𝗠 𝗦𝗘𝗟𝗟𝗘𝗥</h2>
+        <p>Trusted vendor for high-quality, niche-based Instagram accounts and premium digital assets.</p>
+    </div>
+
+    <div class="card">
+        <h2><span class="dot"></span> 𝗖𝗢𝗗𝗜𝗡𝗚 & 𝗗𝗘𝗩</h2>
+        <p>Programming automation bots and building high-performance useful websites.</p>
+    </div>
+
+    <a href="index.html" class="back-link">← RETURN TO PROFILE</a>
+</div>
+
+</body>
+</html>
