@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akku | Profile</title>
+    <style>
+        :root {
+            --primary-color: #00d2ff;
+            --glass-bg: rgba(0, 0, 0, 0.4); 
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Full Screen Center & Float Animation */
+        @keyframes masterFloat {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* Neon Glow Animation for Footer */
+        @keyframes neonPulse {
+            0% { text-shadow: 0 0 5px var(--primary-color), 0 0 10px var(--primary-color); }
+            50% { text-shadow: 0 0 15px var(--primary-color), 0 0 25px var(--primary-color); }
+            100% { text-shadow: 0 0 5px var(--primary-color), 0 0 10px var(--primary-color); }
+        }
+
+        /* Video styling */
+        #bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            background: #000;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            min-height: 100vh;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 500px; /* Bada size as requested */
+            background: var(--glass-bg);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid var(--border-color);
+            border-radius: 25px;
+            padding: 40px; 
+            text-align: center;
+            box-shadow: 0 15px 45px rgba(0,0,0,0.6);
+            position: relative;
+            z-index: 1;
+            animation: masterFloat 5s ease-in-out infinite; /* Floating effect */
+        }
+
+        .profile-img {
+            width: 125px; height: 125px; border-radius: 50%;
+            border: 3px solid var(--primary-color); margin-bottom: 15px;
+            box-shadow: 0 0 20px var(--primary-color); object-fit: cover;
+        }
+
+        h2.title { font-size: 1rem; color: #888; margin-bottom: 5px; letter-spacing: 2px; }
+        h1.main-name { font-size: 1.6rem; margin: 0 0 20px 0; color: #fff; text-shadow: 0 0 10px var(--primary-color); }
+
+        .info-card { background: rgba(255,255,255,0.03); border-radius: 15px; padding: 20px; text-align: left; margin-bottom: 20px; border: 1px solid var(--border-color); }
+        .info-item { margin-bottom: 12px; border-bottom: 1px dashed rgba(255,255,255,0.1); padding-bottom: 5px; }
+        .label { color: #888; font-size: 0.75rem; font-weight: bold; display: block; }
+        .value { color: #00d2ff; font-size: 0.95rem; display: block; margin-top: 2px; }
+        
+        .btn-main { display: block; background: var(--primary-color); color: black; padding: 15px; border-radius: 12px; text-decoration: none; font-weight: bold; margin-bottom: 20px; transition: 0.3s; font-size: 1.05rem; }
+        
+        .nav-links { display: flex; justify-content: space-around; margin-top: 25px; }
+        .nav-links a { 
+            color: var(--primary-color); 
+            text-decoration: none; 
+            font-size: 0.9rem; 
+            letter-spacing: 1px; 
+            transition: 0.3s;
+            font-weight: bold;
+            text-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-color); /* Links Glow */
+        }
+        .nav-links a:hover { color: white; text-shadow: 0 0 15px white; }
+
+        .glitch-footer { font-size: 0.8rem; color: #fff; margin-top: 25px; letter-spacing: 1px; }
+        
+        /* CODE CREATE DOMINATE GLOW */
+        .glow-text {
+            color: var(--primary-color);
+            font-weight: bold;
+            animation: neonPulse 2s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+<video autoplay muted loop playsinline id="bg-video">
+    <source src="bg.mp4" type="video/mp4">
+</video>
+
+<div class="container">
+    <img src="dp.jpg" alt="AKKU" class="profile-img">
+
+    <h2 class="title">🔻💻 𝗔𝗕𝗢𝗨𝗧 💻🔻</h2>
+    <h1 class="main-name">•𝗔 𝗞 𝗞 𝗨 🏴𐏓𝟑🕸️</h1>
+
+    <div class="info-card">
+        <div class="info-item">
+            <span class="label">🕸️ 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 𝗡𝗔𝗠𝗘</span>
+            <span class="value">⚡ 𝗔 𝗞 𝗞 𝗨 🏴𐏓𝟑 ⚕️</span>
+        </div>
+        <div class="info-item">
+            <span class="label">🕸️ 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘</span>
+            <span class="value">🎧 @iwon_0wns</span>
+        </div>
+        <div class="info-item">
+            <span class="label">🕸️ 𝗨𝗦𝗘𝗥 𝗜𝗗</span>
+            <span class="value">🎧 8272340249</span>
+        </div>
+        <div class="info-item">
+            <span class="label">🕸️ 𝗕𝗜𝗥𝗧𝗛</span>
+            <span class="value">🎧 25 • OCT 🕶️</span>
+        </div>
+        <div class="info-item">
+            <span class="label">🕸️ 𝗦𝗧𝗨𝗗𝗬</span>
+            <span class="value">🎧 👨‍💻 𝙀𝙣𝙜𝙞𝙣𝙚𝙚𝙧𝙞𝙣𝙜</span>
+        </div>
+    </div>
+
+    <a href="https://t.me/Lighthubaura" class="btn-main">CONTACT AKKU</a>
+
+    <div class="nav-links">
+        <a href="works.html">[ MY WORKS ]</a>
+        <a href="links.html">[ CHANNELS ]</a>
+    </div>
+
+    <div class="glitch-footer">
+        <span class="glow-text">• 𝗖𝗢𝗗𝗘 • 𝗖𝗥𝗘𝗔𝗧𝗘 • 𝗗𝗢𝗠𝗜𝗡𝗔𝗧𝗘 •</span><br>
+        <span style="color: #444;">💢 𝐋ɪᴠɪɴɢ 𝐈ɴ 𝐌ʏ 𝐎ᴡɴ 𝐆ʟɪᴛᴄʜᴇᴅ 𝐖ᴏʀʟᴅ 💢</span>
+    </div>
+</div>
+
+</body>
+</html>
