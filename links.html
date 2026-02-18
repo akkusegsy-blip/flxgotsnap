@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKKU | Networks</title>
+    <style>
+        :root {
+            --neon-blue: #00d2ff;
+            --bg-dark: #050505;
+            --glass-bg: rgba(0, 0, 0, 0.4);
+        }
+
+        @keyframes masterFloat {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        #bg-video {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            object-fit: cover; z-index: -1; background: #000;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .network-container {
+            width: 100%;
+            max-width: 450px;
+            animation: masterFloat 5s ease-in-out infinite;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 { 
+            font-size: 1.6rem; 
+            letter-spacing: 6px; 
+            color: #fff; 
+            text-transform: uppercase; 
+            margin-bottom: 30px; 
+            text-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue);
+        }
+
+        .section-title {
+            width: 100%;
+            font-size: 0.75rem;
+            color: var(--neon-blue);
+            margin: 25px 0 12px 5px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            border-left: 3px solid var(--neon-blue);
+            padding-left: 12px;
+            text-shadow: 0 0 8px rgba(0, 210, 255, 0.4);
+            font-weight: bold;
+        }
+
+        .link-card {
+            width: 100%;
+            background: var(--glass-bg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 18px;
+            padding: 18px;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+            color: white;
+            transition: all 0.4s ease;
+            box-sizing: border-box;
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+        }
+
+        .link-card:hover {
+            background: rgba(0, 210, 255, 0.1);
+            border-color: var(--neon-blue);
+            box-shadow: 0 0 20px rgba(0, 210, 255, 0.3);
+        }
+
+        .info-grp { display: flex; flex-direction: column; }
+        .name { font-weight: bold; font-size: 1rem; letter-spacing: 1px; text-shadow: 0 0 5px var(--neon-blue); }
+        .username { font-size: 0.75rem; color: #666; margin-top: 4px; }
+
+        .status-dot { height: 8px; width: 8px; background-color: #00ff00; border-radius: 50%; box-shadow: 0 0 12px #00ff00; animation: blink 1.5s infinite; }
+        @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
+
+        .tag-blue {
+            font-size: 0.65rem;
+            color: var(--neon-blue);
+            border: 1px solid var(--neon-blue);
+            padding: 2px 8px;
+            border-radius: 20px;
+            box-shadow: 0 0 8px rgba(0, 210, 255, 0.3);
+            font-weight: bold;
+        }
+
+        .back-btn {
+            margin-top: 40px;
+            font-size: 0.85rem;
+            color: var(--neon-blue);
+            text-decoration: none;
+            transition: 0.3s;
+            letter-spacing: 2px;
+            font-weight: bold;
+            text-shadow: 0 0 10px var(--neon-blue);
+        }
+    </style>
+</head>
+<body>
+
+<video autoplay muted loop playsinline id="bg-video">
+    <source src="bg.mp4" type="video/mp4">
+</video>
+
+<div class="network-container">
+    <h1>⚡ 𝗡𝗘𝗧𝗪𝗢𝗥𝗞 ⚡</h1>
+
+    <div class="section-title">🤖 ᴘʀᴇᴍɪᴜᴍ ʙᴏᴛs ⚠️</div>
+    
+    <a href="https://t.me/"Tevl_bot class="link-card">
+        <div class="info-grp">
+            <span class="name">EXISTENCE INFO Bot</span>
+            <span class="username">@Tevl_bot</span>
+        </div>
+        <div class="status-dot"></div>
+    </a>
+
+    <a href="https://t.me/whoenemies_bot" class="link-card">
+        <div class="info-grp">
+            <span class="name">BASIC BANNING Bot</span>
+            <span class="username">@whoenemies_bot</span>
+        </div>
+        <div class="status-dot"></div>
+    </a>
+
+    <a href="https://t.me/soloxakku_bot" class="link-card">
+        <div class="info-grp">
+            <span class="name">IG METHOD Bot</span>
+            <span class="username">@soloxakku_bot</span>
+        </div>
+        <div class="status-dot"></div>
+    </a>
+
+    <div class="section-title">📢 𝐂𝐇𝐀𝐍𝐍𝐄𝐋𝐒</div>
+
+    <a href="https://t.me/Lighthubaura" class="link-card">
+        <div class="info-grp">
+            <span class="name">𝐋𝐈𝐆𝐇𝐓 𝐇𝐔𝐁....✨🦋</span>
+            <span class="username">@Lighthubaura</span>
+        </div>
+        <span class="tag-blue">𝗢𝗙𝗙𝗜𝗖𝗜𝗔𝗟</span>
+    </a>
+
+    <a href="https://t.me/Scxver_akku" class="link-card">
+        <div class="info-grp">
+            <span class="name">𝐀𝐊𝐊𝐔 𝐗 𝐀𝐁𝐇𝐈𝐍𝐀𝐕 𝐒𝐓𝐎𝐑𝐄....✨💗</span>
+            <span class="username">@Scxver_akku</span>
+        </div>
+        <span class="tag-blue">𝗫𝗠𝗟 & 𝗣𝗙𝗣</span>
+    </a>
+
+    <a href="https://t.me/cytr0nn" class="link-card">
+        <div class="info-grp">
+            <span class="name">𓆩𝗖𝐘𝐓𝐑𝐎𝗡 🇦🇱⃟𓆪</span>
+            <span class="username">@cytr0nn</span>
+        </div>
+    </a>
+
+    <div class="section-title">🛡️ 𝐁𝐀𝐂𝐊 𝐔𝐏</div>
+    <a href="https://t.me/"solo_xakku class="link-card" style="border-style: dashed;">
+        <div class="info-grp">
+            <span class="name">𝗠𝗔𝗜𝗡 𝗕𝗔𝗖𝗞𝗨𝗣</span>
+            <span class="username">https://t.me/solo_xakku</span>
+        </div>
+    </a>
+
+    <a href="index.html" class="back-btn">[ RETURN TO PROFILE ]</a>
+</div>
+
+</body>
+    </html>
